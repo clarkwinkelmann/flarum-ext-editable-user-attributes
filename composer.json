@@ -1,0 +1,36 @@
+{
+    "name": "clarkwinkelmann/flarum-ext-editable-user-attributes",
+    "description": "Edit existing user attributes via the REST API",
+    "keywords": [
+        "flarum",
+        "rest",
+        "edit"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.2"
+    },
+    "authors": [
+        {
+            "name": "Clark Winkelmann",
+            "homepage": "https://clarkwinkelmann.com/",
+            "email": "clark.winkelmann@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/clarkwinkelmann/flarum-ext-editable-user-attributes"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Editable User Attributes",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-user-edit",
+                "backgroundColor": "#684ba6",
+                "color": "#fff"
+            }
+        }
+    }
+}
