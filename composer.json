@@ -20,7 +20,8 @@
         }
     ],
     "support": {
-        "source": "https://github.com/clarkwinkelmann/flarum-ext-editable-user-attributes"
+        "source": "https://github.com/clarkwinkelmann/flarum-ext-editable-user-attributes",
+        "forum": "https://discuss.flarum.org/d/30635"
     },
     "extra": {
         "flarum-extension": {

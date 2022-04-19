@@ -30,7 +30,10 @@ You can [contact me](https://clarkwinkelmann.com/flarum) to sponsor additional f
 
 Support is offered on a "best effort" basis through the Flarum community thread.
 
+**Sponsors**: [Dater.com](https://dater.com/)
+
 ## Links
 
 - [GitHub](https://github.com/clarkwinkelmann/flarum-ext-editable-user-attributes)
 - [Packagist](https://packagist.org/packages/clarkwinkelmann/flarum-ext-editable-user-attributes)
+- [Discuss](https://discuss.flarum.org/d/30635)
