@@ -4,16 +4,34 @@
 
 This extension makes existing user attributes become editable via the REST API.
 
+Ability to edit each value is controlled by its own permission.
+
 Includes:
 
-- Join date (`attributes.joinTime`)
-- External Avatar URL (`attributes.avatarUrl`)
+### Join Date
 
-Both are controlled with new permissions.
+JSON:API attribute: `attributes.joinTime`
+
+Validation: Laravel `required|date`
+
+The value is then parsed with `Carbon::parse()`.
+This means most date formats should be valid.
+Using ISO 8601 or W3C format is recommended.
 
 Changing join date could have unexpected side effects.
 Other extensions can't react to the change because there are no events for it.
 It's recommended to only set this new attribute during registration and not change it afterwards.
+
+### External Avatar URL
+
+JSON:API attribute: `attributes.avatarUrl`
+
+Validation: Laravel `nullable|url`
+
+**Warning:** there is intentionally no max length on the validation.
+But Flarum will truncate the value to its column size (VARCHAR 100 by default).
+You can edit the database column to accept longer values if you need.
+If you pass user-provided values here, you will need to do your own length validation.
 
 ## Installation
 
